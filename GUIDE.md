@@ -68,7 +68,7 @@ $ irb
  => true 
 2.1.2 :002 > pem = BitPay::KeyUtils.generate_pem
  => "-----BEGIN EC PRIVATE KEY-----\nMHQCAQEEIH8oSTRm8lVMTVOsDZleIB8AmkiuHnp+ctEknqeUmZahoAcGBSuBBAAK\noUQDQgAEbjhdKA+X8NEKgcbHhyJaBMvePV7Sj6AQuOMQzuZYdskdkPY1/jlfQwNG\n4GVd/zSw4uhfukw/SDBOEKlQGVAmxQ==\n-----END EC PRIVATE KEY-----\n" 
-2.1.1 :002 > client = BitPay::SDK::Client.new(api_uri: 'https://test.bitpay.com', pem: pem)
+2.1.1 :002 > client = BitPay::SDK::Client.new(api_uri: 'https://test.bitpay.com', pem: pem))
  => #<BitPay::SDK::Client:0x000000019c6d40 @pem="---... @tokens={}> 
 2.1.1 :003 > client.pair_client()
  => {"data"=>[{"policies"=>[{"policy"=>"id", "method"=>"inactive", "params"=>["Tf49SFeiUAtytFEW2EUqZgWj32nP51PK73M"]}], "token"=>"BKQyVdaGQZAArdkkSuvtZN5gcN2355c8vXLj5eFPkfuK", "dateCreated"=>1422474475162, "pairingExpiration"=>1422560875162, "pairingCode"=>"Vy76yTh"}]} 
